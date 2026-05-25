@@ -1,0 +1,103 @@
+<svg viewBox="0 0 800 440" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Analytics dashboard with KPI cards and forecast chart">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1420"/>
+      <stop offset="1" stop-color="#1a2233"/>
+    </linearGradient>
+    <linearGradient id="trend" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff2f6d" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ff2f6d" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="440" fill="url(#bg)"/>
+
+  <!-- dashboard title row -->
+  <text x="32" y="44" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6eaf2">PDF ingestion · forecast</text>
+  <rect x="700" y="28" width="68" height="22" rx="11" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+  <circle cx="714" cy="39" r="3" fill="#10b981"/>
+  <text x="724" y="43" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#10b981">live</text>
+
+  <!-- KPI cards -->
+  <g>
+    <!-- Card 1: PDFs / month -->
+    <rect x="32" y="68" width="240" height="92" rx="10" fill="#1a2233" stroke="#2a3548" stroke-width="1"/>
+    <text x="48" y="92" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#5b6b7b" letter-spacing="1.2">PDFS PROCESSED / MO</text>
+    <text x="48" y="128" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#e6eaf2">1,000+</text>
+    <text x="48" y="148" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#10b981">↑ end-to-end automated</text>
+
+    <!-- Card 2: workload cut -->
+    <rect x="284" y="68" width="240" height="92" rx="10" fill="#1a2233" stroke="#2a3548" stroke-width="1"/>
+    <text x="300" y="92" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#5b6b7b" letter-spacing="1.2">ANALYST WORKLOAD CUT</text>
+    <text x="300" y="128" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#ff2f6d">70%</text>
+    <text x="300" y="148" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#9aa7b5">replaced manual entry</text>
+
+    <!-- Card 3: stack -->
+    <rect x="536" y="68" width="232" height="92" rx="10" fill="#1a2233" stroke="#2a3548" stroke-width="1"/>
+    <text x="552" y="92" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#5b6b7b" letter-spacing="1.2">STACK</text>
+    <g font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#abb2bf">
+      <rect x="552" y="106" width="58" height="22" rx="11" fill="#7a7ff0" fill-opacity="0.2"/>
+      <text x="581" y="121" text-anchor="middle">Azure</text>
+      <rect x="616" y="106" width="58" height="22" rx="11" fill="#7a7ff0" fill-opacity="0.2"/>
+      <text x="645" y="121" text-anchor="middle">Python</text>
+      <rect x="552" y="132" width="58" height="22" rx="11" fill="#ff2f6d" fill-opacity="0.2"/>
+      <text x="581" y="147" text-anchor="middle">OCR</text>
+      <rect x="616" y="132" width="68" height="22" rx="11" fill="#ff2f6d" fill-opacity="0.2"/>
+      <text x="650" y="147" text-anchor="middle">Power BI</text>
+    </g>
+  </g>
+
+  <!-- Chart panel -->
+  <rect x="32" y="176" width="736" height="232" rx="10" fill="#0e1420" stroke="#2a3548" stroke-width="1"/>
+
+  <text x="48" y="200" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#abb2bf" letter-spacing=".5">Forecast — supervised model</text>
+
+  <!-- y-axis grid -->
+  <g stroke="#2a3548" stroke-width=".5" stroke-dasharray="3,3">
+    <line x1="60" y1="230" x2="752" y2="230"/>
+    <line x1="60" y1="270" x2="752" y2="270"/>
+    <line x1="60" y1="310" x2="752" y2="310"/>
+    <line x1="60" y1="350" x2="752" y2="350"/>
+    <line x1="60" y1="390" x2="752" y2="390"/>
+  </g>
+
+  <!-- bar chart (historical) -->
+  <g>
+    <rect x="80"  y="340" width="40" height="50"  rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="140" y="320" width="40" height="70"  rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="200" y="295" width="40" height="95"  rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="260" y="330" width="40" height="60"  rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="320" y="275" width="40" height="115" rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="380" y="255" width="40" height="135" rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="440" y="300" width="40" height="90"  rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="500" y="260" width="40" height="130" rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="560" y="245" width="40" height="145" rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="620" y="230" width="40" height="160" rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+    <rect x="680" y="225" width="40" height="165" rx="3" fill="#7a7ff0" fill-opacity="0.55"/>
+  </g>
+
+  <!-- forecast area under line -->
+  <path d="M 100,360 L 160,335 L 220,305 L 280,325 L 340,280 L 400,260 L 460,295 L 520,265 L 580,247 L 640,232 L 700,225 L 700,390 L 100,390 Z"
+        fill="url(#trend)" opacity="0.5"/>
+
+  <!-- forecast trend line -->
+  <path d="M 100,360 L 160,335 L 220,305 L 280,325 L 340,280 L 400,260 L 460,295 L 520,265 L 580,247 L 640,232 L 700,225"
+        stroke="#ff2f6d" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- dots on trend line -->
+  <g fill="#ff2f6d">
+    <circle cx="100" cy="360" r="3.5"/>
+    <circle cx="280" cy="325" r="3.5"/>
+    <circle cx="460" cy="295" r="3.5"/>
+    <circle cx="640" cy="232" r="3.5"/>
+    <circle cx="700" cy="225" r="4"/>
+  </g>
+
+  <!-- x-axis labels -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="10" fill="#5b6b7b" text-anchor="middle">
+    <text x="100" y="408">Jan</text>
+    <text x="280" y="408">Apr</text>
+    <text x="460" y="408">Jul</text>
+    <text x="640" y="408">Oct</text>
+  </g>
+</svg>

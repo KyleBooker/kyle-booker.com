@@ -1,0 +1,125 @@
+<svg viewBox="0 0 800 440" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized code editor showing reviewed code with checkmarks">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1420"/>
+      <stop offset="1" stop-color="#1a2233"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="440" fill="url(#bg)"/>
+
+  <!-- top chrome bar -->
+  <rect x="0" y="0" width="800" height="40" fill="#0a0e16"/>
+  <circle cx="22" cy="20" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="20" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="20" r="6" fill="#28c840"/>
+  <rect x="320" y="11" width="160" height="18" rx="9" fill="#1a2233"/>
+  <text x="400" y="24" text-anchor="middle" font-family="Menlo, Monaco, monospace" font-size="11" fill="#9aa7b5">review.py — outlier</text>
+
+  <!-- line number gutter -->
+  <rect x="0" y="40" width="50" height="372" fill="#0a0e16"/>
+
+  <!-- line numbers -->
+  <g font-family="Menlo, Monaco, monospace" font-size="11" fill="#5b6b7b" text-anchor="end">
+    <text x="40" y="76">1</text>
+    <text x="40" y="100">2</text>
+    <text x="40" y="124">3</text>
+    <text x="40" y="148">4</text>
+    <text x="40" y="172">5</text>
+    <text x="40" y="196">6</text>
+    <text x="40" y="220">7</text>
+    <text x="40" y="244">8</text>
+    <text x="40" y="268">9</text>
+    <text x="40" y="292">10</text>
+    <text x="40" y="316">11</text>
+    <text x="40" y="340">12</text>
+    <text x="40" y="364">13</text>
+    <text x="40" y="388">14</text>
+  </g>
+
+  <!-- reviewed-line highlights (subtle green wash) -->
+  <rect x="50" y="232" width="750" height="20" fill="#10b981" fill-opacity="0.07"/>
+  <rect x="50" y="280" width="750" height="20" fill="#10b981" fill-opacity="0.07"/>
+
+  <!-- code lines as colored token rects -->
+  <g>
+    <!-- line 1: comment -->
+    <rect x="70" y="68" width="360" height="11" rx="2" fill="#3a4555"/>
+
+    <!-- line 2: def + function + ( args ) : -->
+    <rect x="70"  y="92" width="32"  height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="110" y="92" width="120" height="11" rx="2" fill="#7a7ff0"/>
+    <rect x="238" y="92" width="6"   height="11" rx="2" fill="#abb2bf"/>
+    <rect x="252" y="92" width="80"  height="11" rx="2" fill="#abb2bf"/>
+    <rect x="340" y="92" width="6"   height="11" rx="2" fill="#abb2bf"/>
+    <rect x="354" y="92" width="6"   height="11" rx="2" fill="#abb2bf"/>
+
+    <!-- line 3: indented if check -->
+    <rect x="110" y="116" width="22" height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="140" y="116" width="70" height="11" rx="2" fill="#abb2bf"/>
+    <rect x="218" y="116" width="14" height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="240" y="116" width="60" height="11" rx="2" fill="#98c379"/>
+    <rect x="308" y="116" width="6"  height="11" rx="2" fill="#abb2bf"/>
+
+    <!-- line 4: indented raise -->
+    <rect x="150" y="140" width="40"  height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="198" y="140" width="100" height="11" rx="2" fill="#7a7ff0"/>
+    <rect x="306" y="140" width="6"   height="11" rx="2" fill="#abb2bf"/>
+    <rect x="318" y="140" width="120" height="11" rx="2" fill="#98c379"/>
+
+    <!-- line 5: blank -->
+
+    <!-- line 6: comment -->
+    <rect x="110" y="188" width="280" height="11" rx="2" fill="#3a4555"/>
+
+    <!-- line 7: assignment -->
+    <rect x="110" y="212" width="90"  height="11" rx="2" fill="#abb2bf"/>
+    <rect x="208" y="212" width="10"  height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="226" y="212" width="60"  height="11" rx="2" fill="#7a7ff0"/>
+    <rect x="294" y="212" width="6"   height="11" rx="2" fill="#abb2bf"/>
+    <rect x="306" y="212" width="60"  height="11" rx="2" fill="#abb2bf"/>
+    <rect x="374" y="212" width="6"   height="11" rx="2" fill="#abb2bf"/>
+
+    <!-- line 8: HIGHLIGHTED return -->
+    <rect x="110" y="236" width="50"  height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="168" y="236" width="160" height="11" rx="2" fill="#abb2bf"/>
+
+    <!-- line 9: blank -->
+
+    <!-- line 10: HIGHLIGHTED assert -->
+    <rect x="70"  y="284" width="48"  height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="126" y="284" width="120" height="11" rx="2" fill="#abb2bf"/>
+    <rect x="254" y="284" width="10"  height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="272" y="284" width="80"  height="11" rx="2" fill="#d19a66"/>
+
+    <!-- line 11: comment -->
+    <rect x="70" y="308" width="180" height="11" rx="2" fill="#3a4555"/>
+
+    <!-- line 12: decorator-ish -->
+    <rect x="70" y="332" width="6"   height="11" rx="2" fill="#d19a66"/>
+    <rect x="80" y="332" width="80"  height="11" rx="2" fill="#d19a66"/>
+
+    <!-- line 13: def -->
+    <rect x="70"  y="356" width="32"  height="11" rx="2" fill="#ff2f6d"/>
+    <rect x="110" y="356" width="90"  height="11" rx="2" fill="#7a7ff0"/>
+    <rect x="208" y="356" width="60"  height="11" rx="2" fill="#abb2bf"/>
+
+    <!-- line 14: indented body -->
+    <rect x="110" y="380" width="200" height="11" rx="2" fill="#abb2bf"/>
+  </g>
+
+  <!-- review checkmarks in gutter -->
+  <g>
+    <circle cx="25" cy="244" r="9" fill="#10b981"/>
+    <path d="M21,244 L24,247 L29,241" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <circle cx="25" cy="292" r="9" fill="#10b981"/>
+    <path d="M21,292 L24,295 L29,289" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- status bar -->
+  <rect x="0" y="412" width="800" height="28" fill="#0a0e16"/>
+  <circle cx="22" cy="426" r="4" fill="#10b981"/>
+  <text x="36" y="430" font-family="Menlo, Monaco, monospace" font-size="11" fill="#abb2bf">Reviewed — 5,000+ submissions audited</text>
+</svg>

@@ -1,0 +1,119 @@
+<svg viewBox="0 0 800 440" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ETL pipeline diagram: sources feed a transform stage that loads into an analytics store">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1420"/>
+      <stop offset="1" stop-color="#1a2233"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="440" fill="url(#bg)"/>
+
+  <!-- section labels -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#5b6b7b" letter-spacing="2" text-anchor="middle">
+    <text x="120" y="52">SOURCES</text>
+    <text x="400" y="52">TRANSFORM</text>
+    <text x="680" y="52">LOAD</text>
+  </g>
+
+  <!-- SOURCES on left -->
+  <g>
+    <!-- Postgres db -->
+    <g transform="translate(60, 78)">
+      <ellipse cx="60" cy="14" rx="60" ry="12" fill="#1a2233" stroke="#7a7ff0" stroke-width="1.5"/>
+      <path d="M0,14 L0,54 a60,12 0 0 0 120,0 L120,14" fill="#1a2233" stroke="#7a7ff0" stroke-width="1.5"/>
+      <ellipse cx="60" cy="34" rx="60" ry="12" fill="none" stroke="#7a7ff0" stroke-width="1" stroke-opacity=".4"/>
+      <ellipse cx="60" cy="14" rx="60" ry="12" fill="none" stroke="#7a7ff0" stroke-width="1.5"/>
+      <text x="60" y="86" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#abb2bf">PostgreSQL</text>
+      <text x="60" y="100" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#5b6b7b">customer data</text>
+    </g>
+
+    <!-- Web scraper -->
+    <g transform="translate(60, 200)">
+      <rect x="0" y="0" width="120" height="64" rx="8" fill="#1a2233" stroke="#7a7ff0" stroke-width="1.5"/>
+      <rect x="16" y="16" width="88" height="6" rx="2" fill="#7a7ff0" fill-opacity="0.6"/>
+      <rect x="16" y="30" width="68" height="6" rx="2" fill="#7a7ff0" fill-opacity="0.4"/>
+      <rect x="16" y="44" width="56" height="6" rx="2" fill="#7a7ff0" fill-opacity="0.4"/>
+      <text x="60" y="86" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#abb2bf">Selenium</text>
+      <text x="60" y="100" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#5b6b7b">30k listings / wk</text>
+    </g>
+
+    <!-- CRM db -->
+    <g transform="translate(60, 322)">
+      <ellipse cx="60" cy="14" rx="60" ry="12" fill="#1a2233" stroke="#7a7ff0" stroke-width="1.5"/>
+      <path d="M0,14 L0,46 a60,12 0 0 0 120,0 L120,14" fill="#1a2233" stroke="#7a7ff0" stroke-width="1.5"/>
+      <ellipse cx="60" cy="14" rx="60" ry="12" fill="none" stroke="#7a7ff0" stroke-width="1.5"/>
+      <text x="60" y="78" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#abb2bf">CRM exports</text>
+    </g>
+  </g>
+
+  <!-- Center: TRANSFORM -->
+  <g>
+    <rect x="320" y="148" width="160" height="156" rx="14" fill="#1a2233" stroke="#ff2f6d" stroke-width="2"/>
+    <text x="400" y="184" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6eaf2">ETL</text>
+    <text x="400" y="204" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#9aa7b5">Python · SQL · pandas</text>
+
+    <!-- divider -->
+    <line x1="344" y1="220" x2="456" y2="220" stroke="#2a3548" stroke-width="1"/>
+
+    <!-- throughput stat -->
+    <text x="400" y="244" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#ff2f6d">1 GB</text>
+    <text x="400" y="262" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#5b6b7b" letter-spacing="1.2">PER HOUR</text>
+
+    <!-- gear-like dots -->
+    <g fill="#ff2f6d">
+      <circle cx="362" cy="284" r="3"/>
+      <circle cx="380" cy="290" r="3"/>
+      <circle cx="400" cy="284" r="3"/>
+      <circle cx="420" cy="290" r="3"/>
+      <circle cx="438" cy="284" r="3"/>
+    </g>
+  </g>
+
+  <!-- Right: LOAD -->
+  <g>
+    <rect x="600" y="124" width="160" height="204" rx="14" fill="#1a2233" stroke="#10b981" stroke-width="2"/>
+
+    <!-- mini dashboard inside -->
+    <text x="618" y="148" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#5b6b7b" letter-spacing="1">ANALYTICS</text>
+
+    <!-- KPI row -->
+    <rect x="618" y="158" width="60" height="38" rx="4" fill="#7a7ff0" fill-opacity="0.25"/>
+    <rect x="624" y="166" width="32" height="4" rx="2" fill="#7a7ff0" fill-opacity="0.5"/>
+    <rect x="624" y="176" width="48" height="14" rx="3" fill="#7a7ff0" fill-opacity="0.7"/>
+
+    <rect x="682" y="158" width="60" height="38" rx="4" fill="#ff2f6d" fill-opacity="0.25"/>
+    <rect x="688" y="166" width="32" height="4" rx="2" fill="#ff2f6d" fill-opacity="0.5"/>
+    <rect x="688" y="176" width="48" height="14" rx="3" fill="#ff2f6d" fill-opacity="0.7"/>
+
+    <!-- chart area -->
+    <rect x="618" y="204" width="124" height="80" rx="4" fill="#0e1420" stroke="#2a3548" stroke-width="1"/>
+    <!-- line chart -->
+    <polyline points="624,272 644,260 664,250 684,240 704,228 724,216 738,210" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+    <!-- area under -->
+    <polygon points="624,272 644,260 664,250 684,240 704,228 724,216 738,210 738,280 624,280" fill="#10b981" fill-opacity="0.15"/>
+
+    <!-- churn label -->
+    <text x="618" y="302" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#10b981">CHURN MODEL</text>
+    <text x="618" y="316" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#9aa7b5">80% recall · +15% retention</text>
+  </g>
+
+  <!-- arrows from sources to ETL (dashed = data flow) -->
+  <g stroke="#7a7ff0" stroke-width="2" fill="none" stroke-dasharray="6,6">
+    <path d="M180,104 C 240,104 270,200 320,212"/>
+    <path d="M180,232 L320,226"/>
+    <path d="M180,346 C 240,346 270,250 320,240"/>
+  </g>
+
+  <!-- arrow from ETL to load (solid accent) -->
+  <g stroke="#ff2f6d" stroke-width="2.5" fill="none">
+    <path d="M480,226 L590,226" stroke-dasharray="6,6"/>
+    <path d="M580,218 L600,226 L580,234" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="0"/>
+  </g>
+
+  <!-- arrowheads on source→ETL paths -->
+  <g fill="#7a7ff0">
+    <polygon points="320,212 310,206 310,218"/>
+    <polygon points="320,226 310,220 310,232"/>
+    <polygon points="320,240 310,234 310,246"/>
+  </g>
+</svg>

@@ -1,286 +1,455 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kyle Booker — Software Engineer</title>
+  <meta name="description" content="Software developer with an applied math background. I build reliable systems — from numerical solvers to self-hosted infrastructure — and care about the operational side: monitoring, automation, and code that runs unattended." />
+  <meta name="author" content="Kyle Booker" />
 
-        <meta name="description" content="Graduate Research Assistant at the Computational Fluid Dynamics (CFD) Lab at
-        University of Waterloo.">
-        <meta name="author" content="Kyle Booker">
+  <!-- Open Graph / Twitter (nice link previews) -->
+  <meta property="og:title" content="Kyle Booker — Software Engineer" />
+  <meta property="og:description" content="Software engineer focused on reliable systems, self-hosted infrastructure, and scientific computing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kyle-booker.com" />
+  <meta property="og:image" content="https://kyle-booker.com/img/preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-        <link rel="stylesheet" href="style.css">
-        <title>My Website</title>
-    </head>
-    <body>
-        <!-- Header -->
-        <section id="header">
-            <div class="header container">
-                <div class="nav-bar">
-                    <div class="brand">
-                        <a href="#main">
-                            <h1>
-                                <span>Kyle<span>
-                                        Booker</h1>
-                                </a>
-                            </div>
-                            <div class="nav-list">
-                                <div class="hamburger">
-                                    <div class="bar"></div>
-                                </div>
-                                <ul>
-                                  <li><a href="#main" data-after="Home">Home</a></li>
-                                  <li><a href="#about" data-after="About">About</a></li>
-                                  <li><a href="#experience" data-after="Experience">Experience</a></li>
-                                  <li><a href="#education" data-after="Education">Education</a></li>
-                                    <li><a href="#publication" data-after="Publications">Publications</a></li>
-                                    <li><a href="#contact" data-after="Contact">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End Header -->
+  <!-- Icons: inline SVG monogram so it works without an external request -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff2f6d'/%3E%3Cstop offset='1' stop-color='%237a7ff0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Montserrat,system-ui,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EKB%3C/text%3E%3C/svg%3E" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-                <!-- Main Section -->
-                <section id="main">
-                    <div class="main container">
-                        <div>
-                            <h1>Hello,
-                                <span></span>
-                            </h1>
-                            <h1>My Name is
-                                <span></span>
-                            </h1>
-                            <h1 id="name">Kyle
-                                <span></span>
-                            </h1>
-                            <a href="#about" type="button" class="cta">Start</a>
-                        </div>
-                    </div>
-                </section>
-                <!--  End Main Section -->
-                
-                <!-- About Section -->
-                <section id="about">
-                    <div class="about container">
-                        <div class="col-left">
-                            <div class="about-img">
-                                <img src="./img/face-profile.jpg" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-right">
-                            <h1 class="section-title">About <span>me</span></h1>
-                            <h2>Software Engineer</h2>
-                            <p>
-                                I am a University of Waterloo Masters's graduate in applied mathematics with over two years of software engineering experience in computational fluid dynamics and scientific computing. 
-                                              My research has given me skills and tools for analyzing, manipulating, and maximizing the use of large, abstract data sets. I am always looking into new technologies to develop my future experience.
-                            </p>
-                            <a href="./Kyle_Booker_Resume.pdf" class="cta" download>Download Resume</a>
-                        </div>
-                    </div>
-                </section>
-                <!-- End About Section -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-                <!-- experience Section -->
-                <section id="experience">
-                    <div class="experience container">
-                        <div class="experience-header">
-                            <h1 class="section-title">
-                                <span>Exp</span>erience</h1>
-                        </div>
-                        <div class="all-experience">
-                            <div class="experiences-item">
-                                <div class="experiences-info">
-                                    <h1>Graduate Research Assistant</h1>
-                                    <h2>Scientific Computing and Computational Fluid Dynamics Laboratory, University of Waterloo, Waterloo ON</h2>
-                                    <h2>September 2018 - Present</h2>
-                                    <p>Developed Python code for computational fluid dynamics and scientific computing problems. 
-                                      Held weekly scrum-style meetings with ten graduate students in both the department of applied math and chemical engineering. Collaborated with a group of three other graduate students to work on problems in computational fluid dynamics.</p>
-                                </div>
-                                <div class="experiences-img">
-                                    <img src="./img/CFD.png" alt="img" id="CFD_img">
-                                </div>
-                            </div>
-                            <div class="experiences-item">
-                                <div class="experiences-info">
-                                    <h1>Undergraduate Research Assistant</h1>
-                                    <h2>Thompson Rivers University, Kamloops BC</h2>
-                                    <h2>May 2018 - Aug 2018</h2>
-                                    <p>Developed code to accurately model a chemical reaction. Co‑authored a published paper and gave a talk at the Canadian Undergraduate Math Conference. 
-                                      I improved readability and functionality on legacy code written in C for the accessibility of future students. 
-                                      Derived and implemented higher‑order numerical schemes for improved numerical accuracy. 
-                                      Automated programs using Bash scripts to run concurrent simulations.</p>
-                                </div>
-                                <div class="experiences-img">
-                                    <img src="./img/Calculus.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="experiences-item">
-                                <div class="experiences-info">
-                                    <h1>Undergraduate Research Assistant</h1>
-                                    <h2>Thompson Rivers University, Kamloops BC</h2>
-                                    <h2>Jan 2017 - Aug 2018</h2>
-                                    <p>I developed algorithms with Python resulting in proving theorems in graph theory. 
-                                      Co-authored a published paper and gave a talk at the Canadian Undergraduate Math Conference for over fifty math students.</p>
-                                </div>
-                                <div class="experiences-img">
-                                    <img src="./img/graph.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="experiences-item">
-                                <div class="experiences-info">
-                                    <h1>Undergraduate Research Assistant</h1>
-                                    <h2>Thompson Rivers University, Kamloops BC</h2>
-                                    <h2>May 2016 - Aug 2016</h2>
-                                    <p>Marked quizzes for a course with over 80 students. 
-                                      Implemented algorithms using Python to solve problems in Matroid theory on a Unix-based operating system.</p>
-                                </div>
-                                <div class="experiences-img">
-                                    <img src="./img/matroid.png" alt="img" id="matroid">
-                                </div>
-                            </div>
-                            <div class="experiences-item">
-                                <div class="experiences-info">
-                                    <h1>Administrative Assistant</h1>
-                                    <h2>Canadian Cancer Society, Kamloops BC</h2>
-                                    <h2>May 2015 - Aug 2015</h2>
-                                    <p>Handled all inquiries and donations directed to the Kamloops office. 
-                                      Maintained financial records for the office, and implemented a more orderly solution using Excel saving company time. 
-                                      Organized Relay For Life, an event that raised over $60,000 working as a committee coordinator.</p>
-                                </div>
-                                <div class="experiences-img">
-                                    <img src="./img/CCS.jpg" alt="img" id="CCS">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End experience Section -->
+  <header aria-label="Primary">
+    <div class="container nav">
+      <a class="brand" href="#main" aria-label="Kyle Booker home">
+        <div class="brand__logo" aria-hidden="true">KB</div>
+        <span>Kyle&nbsp;Booker</span>
+      </a>
+      <nav>
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation menu"><span class="menu-icon"><span></span></span></button>
+        <ul id="menu" role="menubar">
+          <li role="none"><a role="menuitem" href="#main">Home</a></li>
+          <li role="none"><a role="menuitem" href="#about">About</a></li>
+          <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+          <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+          <li role="none"><a role="menuitem" href="#homelab">Homelab</a></li>
+          <li role="none"><a role="menuitem" href="#education">Education</a></li>
+          <li role="none"><a role="menuitem" href="#publication">Publications</a></li>
+          <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__right">
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <a class="btn nav__cta" href="./Kyle_Booker_Resume.pdf" download>Download Résumé</a>
+      </div>
+    </div>
+  </header>
 
-                <!-- Service Section -->
-                <section id="education">
-                  <div class="education container">
-                      <div class="service-top">
-                          <h1 class="section-title">
-                              <span>Edu</span>cation</h1>
-                      </div>
-                      <div class="service-bottom">
-                          <div class="service-item">
-                              <h2>Master of Math in Applied Mathematics</h2>
-                              <h2>University of Waterloo</h2>
-                              <ul class="education-info">
-                                <li>Research Areas: Computational Fluid Dynamics, Scientific Computing, Numerical Analysis.</li>
-                                <li>Courses: Fluid Mechanics, Numerical Partial Differential Equations, Transport Phenomena and Multiphase Flow, Applied Functional Analysis.</li>
-                                <li>Thesis: H(div)-conforming Discontinuous Galerkin Methods for Multiphase Flow.</li>
-                              </ul>
-                          </div>
+  <main id="main">
+    <section class="hero">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="./img/CFD.png" aria-hidden="true">
+        <source src="./img/vortex_shedding.web.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container">
+        <h1>Hi, I'm <span class="accent">Kyle</span></h1>
+        <p>Software developer with an applied math background. I work across data engineering, machine learning, and infrastructure — from production ETL pipelines and Azure ML services to a self‑hosted K3s home lab I operate for 50+ users at 99% uptime.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="#experience">See my work</a>
+          <a class="btn" href="#homelab">Tour the home lab</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
 
-                          <div class="service-item" id="TRU">
-                              <h2>Bachelor of Science in Computer Science and Mathematics</h2>
-                              <ul class="education-info">
-                                <li>Computer Science Courses: Advanced Web Design & Programming, Computer Networks, Data Structures, Database Systems, Operating Systems.</li>
-                                <li>Math Courses: Graph Theory, Probability, Statistics, Differential Equations, Topology, Linear Programming, Linear Algebra, Discrete Mathematics.</li>
-                                <li>Dean's Honour Roll (2016, 2017, 2018).</li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </section>
-              <!-- End Service Section -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <figure class="about__img">
+          <img src="./img/face-profile.jpg" alt="Portrait of Kyle Booker" loading="lazy" />
+        </figure>
+        <div class="about__text">
+          <h2 id="about-title" class="section-title">About <span>me</span></h2>
+          <p>I'm a Vancouver‑based engineer with a background in applied mathematics (M.Math, University of Waterloo). My career has lived at the intersection of data engineering, analytics, software development, and cloud systems — building reliable tools that turn complex data into useful decisions.</p>
+          <p>In industry I've shipped production ETL pipelines moving 1 GB/hour, Azure OCR services replacing manual data entry for 70% of an analyst team's workload, supervised forecasting models with REST inference endpoints, and a churn‑prediction service that drove a 15% lift in retention. I'm currently reviewing and debugging contributor‑submitted code (Python, C, C++, JS) at Outlier AI to improve LLM training data.</p>
+          <p>Outside of work I operate a Linux home lab running 100+ Docker containers on K3s, with production‑style ingress (Traefik, Cloudflare Tunnels, Authelia SSO, WireGuard) serving 20+ active users at 99% uptime. It's where I sharpen the operational side: deployments, monitoring, backups, and incident recovery.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="./Kyle_Booker_Resume.pdf" download>Download Résumé</a>
+            <a class="btn" href="https://github.com/KyleBooker" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/kylebooker/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" class="section-title"><span>Skills</span> &amp; stack</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <ul>
+              <li class="primary">Python</li>
+              <li class="primary">SQL</li>
+              <li class="primary">C++</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>C</li>
+              <li>C#</li>
+              <li>Java</li>
+              <li>Bash</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Infrastructure &amp; DevOps</h3>
+            <ul>
+              <li class="primary">Docker</li>
+              <li class="primary">K3s (Kubernetes)</li>
+              <li class="primary">Linux</li>
+              <li>Traefik</li>
+              <li>Cloudflare Tunnels</li>
+              <li>WireGuard</li>
+              <li>Git / CI&nbsp;·&nbsp;CD</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data &amp; cloud</h3>
+            <ul>
+              <li class="primary">PostgreSQL</li>
+              <li class="primary">pandas</li>
+              <li class="primary">Azure</li>
+              <li>MongoDB</li>
+              <li>Redis</li>
+              <li>Apache Spark</li>
+              <li>AWS</li>
+              <li>Power BI</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Scientific computing</h3>
+            <ul>
+              <li class="primary">NumPy / SciPy</li>
+              <li class="primary">MFEM (FEM)</li>
+              <li>Numerical PDEs</li>
+              <li>Discontinuous Galerkin</li>
+              <li>HPC / Compute Canada</li>
+              <li>ParaView</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                  <!-- Publications -->
-                  <section id="publication">
-                    <div class="publication container">
-                        <div class="row">
-                                <h1 class="publication-title"><span>Pub</span>lications</h1>
-                                <ol class="publications-list">
-                                   <li>
-                                       <a href="https://uwspace.uwaterloo.ca/bitstream/handle/10012/16952/Booker_Kyle.pdf?sequence=3&isAllowed=y" class="pubs" target="_blank">
-                                       <b>Booker, K.</b> 2021. “H(div)-conforming Discontinuous Galerkin Methods for Multiphase Flow.” University of Waterloo, Masters thesis.
-                                       </a>
-                                   </li>                        
-                                   <li>
-                                       <a href="https://doi.org/10.1051/mmnp/2019008" class="pubs" target="_blank">
-                                        <b>Booker, K.</b>, Nec, Y. “On Accuracy of Numerical Solution to Boundary Value Problems on Infinite Domains with Slow Decay.” Math. Model. Nat. Phenom., 14-5 April 2019.
-                                       </a>
-                                   </li>
-                                </ol>                        
-                        </div>
-                        <!--// end row -->
-                    </div>
-                </div>
-                <!-- End Publications -->
+    <section id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <h2 id="exp-title" class="section-title"><span>Exp</span>erience</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card__media"><img src="./img/outlier-code.svg" alt="Stylized code editor showing reviewed lines with green checkmarks" loading="lazy" /></div>
+            <div class="card__body">
+              <h3>Reviewer, AI Training (Programming &amp; Mathematics)</h3>
+              <div class="meta">Outlier AI • Jan 2024 – Present • Vancouver, BC</div>
+              <p>Run, debug, and fix contributor‑submitted Python, C, C++, and JavaScript code across math, programming, and physics tasks; verify correctness, edge‑case handling, and runtime behaviour before submissions enter the training pipeline. Audited 5,000+ submissions and authored structured feedback that improved contributor consistency and downstream model accuracy.</p>
+              <div class="tag-row">
+                <span>Python</span>
+                <span>C / C++</span>
+                <span>JavaScript</span>
+                <span>Code review</span>
+                <span>LLM training data</span>
+              </div>
+            </div>
+          </article>
 
+          <article class="card">
+            <div class="card__media"><img src="./img/intellifi-dashboard.svg" alt="Analytics dashboard with KPI cards and a forecast trend chart" loading="lazy" /></div>
+            <div class="card__body">
+              <h3>Data Scientist</h3>
+              <div class="meta">Intellifi (Residential Technology) • Jun 2022 – Mar 2023 • Vancouver, BC</div>
+              <p>Shipped an Azure Computer Vision OCR ingestion service in Python processing 1,000+ monthly PDFs end‑to‑end, replacing manual data entry and cutting analyst workload by 70%. Built and deployed supervised forecasting models to Azure with REST inference endpoints integrated into production systems. Owned the reporting layer over the data pipeline, exposing KPIs to product, sales, and executive stakeholders via Power BI.</p>
+              <div class="tag-row">
+                <span>Python</span>
+                <span>Azure</span>
+                <span>OCR</span>
+                <span>REST APIs</span>
+                <span>Power BI</span>
+                <span>Forecasting</span>
+              </div>
+            </div>
+          </article>
 
+          <article class="card">
+            <div class="card__media"><img src="./img/cmls-etl.svg" alt="ETL pipeline diagram: sources flow into a transform stage and load into an analytics store" loading="lazy" /></div>
+            <div class="card__body">
+              <h3>Data Analyst</h3>
+              <div class="meta">CMLS Financial (Residential Capital Markets) • Jun 2021 – Jun 2022 • Vancouver, BC</div>
+              <p>Built and operated an automated Python/SQL ETL pipeline processing 1 GB of customer data per hour, replacing manual workflows. Engineered a Selenium ingestion service scraping 30,000 real‑estate listings per week into a PostgreSQL store for analytics. Delivered a production churn‑prediction service (Python, pandas) at 80% recall, driving a 15% lift in retention via targeted campaigns.</p>
+              <div class="tag-row">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>PostgreSQL</span>
+                <span>ETL</span>
+                <span>Selenium</span>
+                <span>pandas</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Contact Section -->
-                <section id="contact">
-                    <div class="contact container">
-                        <div>
-                            <h1 class="section-title">Contact <span>info</span>
-                            </h1>
-                        </div>
-                        <div class="contact-items">
-                            <div class="contact-item">
-                                <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/ringing-phone.png"/></div>
-                                <div class="contact-info">
-                                    <h1>Phone</h1>
-                                    <h2>+1 778 586 5352</h2>
-                                </div>
-                            </div>
-                            <div onclick="location.href='mailto:bookerkyle@gmail.com';" class="contact-item" style="cursor: pointer;" id="email">
-                                <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/email-open.png"/></div>
-                                <div class="contact-info">
-                                    <h1>Email</h1>
-                                    <h2>bookerkyle@gmail.com</h2>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon"><img src="https://img.icons8.com/ios-glyphs/90/000000/address.png"/></div>
-                                <div class="contact-info">
-                                    <h1>Address</h1>
-                                    <h2>Kamloops, BC</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End Contact Section -->
+          <article class="card">
+            <div class="card__media"><img src="./img/CFD.png" alt="CFD visualization" loading="lazy" /></div>
+            <div class="card__body">
+              <h3>Graduate Research Assistant</h3>
+              <div class="meta">University of Waterloo — Scientific Computing &amp; CFD Lab • Sep 2018 – Apr 2021</div>
+              <p>Implemented H(div)‑conforming discontinuous Galerkin methods for multiphase flow in C++ on the MFEM finite‑element library — 2,000+ lines including custom discretizations, solvers, and numerical experiments. Ran large‑scale simulations on Compute Canada HPC clusters with parallel jobs spanning many cores and multi‑day runtimes. Built Python and ParaView pipelines for post‑processing, convergence analysis, and visualization. Authored an NSERC grant proposal, securing $27,000 in thesis research funding.</p>
+              <div class="tag-row">
+                <span>C++</span>
+                <span>MFEM</span>
+                <span>Python</span>
+                <span>HPC / Compute Canada</span>
+                <span>ParaView</span>
+                <span>Finite element methods</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Footer -->
-                <section id="footer">
-                    <div class="footer container">
-                        <div class="brand">
-                            <h1>
-                                <span>Kyle Booker</span>
-                            </h1>
-                        </div>
-                        <h2></h2>
-                        <div class="social-icon">
-                            <div class="social-item">
-                                <a href="https://github.com/KyleBooker" target="_blank"><img src="https://img.icons8.com/ios-glyphs/120/000000/github.png"/></a>
-                            </div>
-                            <div class="social-item">
-                                <a href="https://www.linkedin.com/in/kylebooker/" target="_blank"><img src="https://img.icons8.com/ios-glyphs/120/000000/linkedin-circled--v1.png"/></a>
-                            </div>
-                            <div class="social-item google-scholar">
-                                <a href="https://scholar.google.ca/citations?hl=en&user=wfI17DQAAAAJ&view_op=list_works&gmla=AJsN-F5r55nZwqgQ8u3qG-OluvWcnWfH0evk7v9EuNlK4k2HI96exM95HMpu35S9Qc0ojS3YCu-fgPAjpLDri-b-oL9TyUhrxvBBauOzihM1ZybzovlMA1KyZJBpuPVPXGZRqEVUlypLZLA087M5utg7FFBeLewTgA" target="_blank"><img src="https://img.icons8.com/ios-filled/150/000000/google-scholar--v2.png"/></a>
-                            </div>
-                        </div>
-                        <p>Copyright ©
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            Kyle. All rights reserved.</p>
-                    </div>
-                </section>
-                <!-- End Footer -->
-                <script src="./app.js"></script>
+          <article class="card">
+            <div class="card__media"><img src="./img/graph.png" alt="Graph theory diagram" loading="lazy" /></div>
+            <div class="card__body">
+              <h3>Undergraduate Research Assistant</h3>
+              <div class="meta">Thompson Rivers University • May 2016 – Aug 2018 • Kamloops, BC</div>
+              <p>Refactored 500 lines of legacy C code and parallelized batch simulations with Bash and Python, doubling data throughput. Implemented Python and C algorithms for applied math research in graph theory, matroid theory, and numerical analysis.</p>
+              <div class="tag-row">
+                <span>Python</span>
+                <span>C</span>
+                <span>Bash</span>
+                <span>Graph theory</span>
+                <span>Numerical analysis</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            </body>
-        </html>
-    </body>
+    <section id="homelab" aria-labelledby="homelab-title">
+      <div class="container">
+        <h2 id="homelab-title" class="section-title"><span>Home</span> lab</h2>
+        <div class="lab-intro">
+          <p>I operate a production‑style self‑hosted infrastructure that runs my personal services and supports family and friends. It's the place I sharpen the operational craft — deployments, ingress, identity, monitoring, backups, and incident recovery — at small but real scale.</p>
+          <div class="lab-stats">
+            <div class="lab-stat"><div class="lab-stat__num">100+</div><div class="lab-stat__label">Docker containers</div></div>
+            <div class="lab-stat"><div class="lab-stat__num">20+</div><div class="lab-stat__label">Active users</div></div>
+            <div class="lab-stat"><div class="lab-stat__num">99%</div><div class="lab-stat__label">Uptime</div></div>
+            <div class="lab-stat"><div class="lab-stat__num">K3s</div><div class="lab-stat__label">Orchestration</div></div>
+          </div>
+        </div>
+
+        <!--
+          LIVE GRAFANA EMBED
+          ⚠️ Before pushing this live: open the dashboard URL below in a browser and confirm
+          no PII is visible (hostnames with your name, external IPs, MAC addresses, real
+          usernames, file paths under /home/kyle, geolocations, etc.). The iframe shows
+          exactly what visitors see.
+          To swap to a screenshot fallback, replace the <iframe> with an <img>.
+        -->
+        <div class="live-embed">
+          <div class="live-embed__header">
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-embed__title">Live home‑lab metrics</span>
+            <span class="live-embed__sub">streaming from Grafana · updates in real time</span>
+            <span class="live-embed__spacer"></span>
+            <a class="live-embed__link" href="https://grafana.kyle-booker.com/public-dashboards/95a159503af345978ce94894f64edd28" target="_blank" rel="noreferrer">Open in full ↗</a>
+          </div>
+			<iframe
+			  src="https://grafana.kyle-booker.com/public-dashboards/95a159503af345978ce94894f64edd28?from=now-12h&to=now&timezone=browser&kiosk"
+			  title="Live Grafana dashboard from Kyle's home lab"
+			  loading="lazy"
+			  referrerpolicy="no-referrer-when-downgrade"
+			  allow="fullscreen"
+			></iframe>
+        </div>
+
+        <div class="svc-grid">
+          <div class="svc">
+            <h3>Edge &amp; networking</h3>
+            <p class="svc__sub">Public ingress, DNS, and remote access</p>
+            <dl>
+              <dt>Traefik</dt><dd>Reverse proxy with automatic Let's Encrypt TLS; container‑aware routing chosen over Nginx for dynamic Docker discovery.</dd>
+              <dt>Cloudflare Tunnel + WireGuard</dt><dd>Tunneled public ingress (no exposed ports) and WireGuard for admin access. No static IP needed.</dd>
+              <dt>Pi‑hole (DoH) + AdGuard Home</dt><dd>Network‑wide DNS sinkhole with DNS‑over‑HTTPS upstream; AdGuard as a secondary resolver.</dd>
+              <dt>UniFi Controller</dt><dd>Network management, VLAN segmentation, and access‑point orchestration.</dd>
+            </dl>
+          </div>
+
+          <div class="svc">
+            <h3>Identity &amp; security</h3>
+            <p class="svc__sub">Single sign‑on, secrets, and intrusion detection</p>
+            <dl>
+              <dt>Authelia</dt><dd>SSO + TOTP/Webauthn 2FA in front of every internal service. Replaced ad‑hoc basic auth.</dd>
+              <dt>CrowdSec</dt><dd>Behavioral WAF and crowd‑sourced IP reputation; auto‑bans bad actors at the Traefik layer.</dd>
+              <dt>Vaultwarden</dt><dd>Self‑hosted Bitwarden‑compatible password manager; family vault shared via groups.</dd>
+              <dt>PrivateBin</dt><dd>End‑to‑end encrypted pastebin for sharing secrets out‑of‑band.</dd>
+            </dl>
+          </div>
+
+          <div class="svc">
+            <h3>Observability</h3>
+            <p class="svc__sub">Metrics, logs, uptime, and alerting</p>
+            <dl>
+              <dt>Prometheus + Grafana</dt><dd>Same stack used in most production shops; dashboards for host, containers, network, and per‑service metrics.</dd>
+              <dt>InfluxDB + Telegraf</dt><dd>Time‑series collection for long‑retention infrastructure metrics.</dd>
+              <dt>Uptime Kuma → Gotify</dt><dd>Active probing of every public endpoint; push notifications on incident.</dd>
+              <dt>Dozzle + GoAccess</dt><dd>Live container log streaming and web‑log analysis without a heavy logging pipeline.</dd>
+            </dl>
+          </div>
+
+          <div class="svc">
+            <h3>Productivity &amp; data</h3>
+            <p class="svc__sub">Personal cloud, documents, and finance</p>
+            <dl>
+              <dt>Nextcloud</dt><dd>Self‑hosted file sync, calendars, and contacts; replaces Google Drive for the household.</dd>
+              <dt>Immich (+ Postgres)</dt><dd>Photo backup and ML‑powered library; replaces Google Photos for two iPhones.</dd>
+              <dt>Paperless‑ngx + Paperless‑AI</dt><dd>OCR‑indexed document archive — a direct extension of the OCR ingestion work I did at Intellifi.</dd>
+              <dt>Firefly III · Joplin · Wallos</dt><dd>Personal finance, encrypted notes sync, and subscription tracking.</dd>
+            </dl>
+          </div>
+
+          <div class="svc">
+            <h3>Communications</h3>
+            <p class="svc__sub">Self‑hosted federated messaging</p>
+            <dl>
+              <dt>Matrix / Synapse</dt><dd>Federated chat homeserver backed by dedicated PostgreSQL; full ownership of message history.</dd>
+              <dt>Element Web</dt><dd>Branded web client for the homeserver, behind Authelia.</dd>
+              <dt>Maubot</dt><dd>Plugin‑based Matrix bot framework for automations and notifications.</dd>
+              <dt>coturn</dt><dd>TURN/STUN server for WebRTC voice and video NAT traversal.</dd>
+            </dl>
+          </div>
+
+          <div class="svc">
+            <h3>Developer tooling &amp; data stores</h3>
+            <p class="svc__sub">Where code, search, and persistence live</p>
+            <dl>
+              <dt>Gitea</dt><dd>Self‑hosted Git with automated nightly backup and tested restore runbook.</dd>
+              <dt>code‑server</dt><dd>Browser‑accessible VS Code for editing infrastructure from anywhere.</dd>
+              <dt>Meilisearch · Overleaf</dt><dd>Fast typo‑tolerant search and self‑hosted LaTeX editor.</dd>
+              <dt>Postgres ×4 · MariaDB · MongoDB · Redis</dt><dd>Multiple Postgres versions side‑by‑side (13–17) for service‑specific compatibility, with shared MariaDB / Mongo / Redis pools.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="ops">
+          <h3>How it's run</h3>
+          <dl>
+            <dt>Backups</dt><dd>Duplicacy snapshots run nightly with encryption and off‑site rotation; restore drills tested quarterly.</dd>
+            <dt>Updates</dt><dd>Container images pinned and updated on a controlled cadence rather than blind auto‑pull; rollback tested.</dd>
+            <dt>Monitoring &amp; alerts</dt><dd>Prometheus + Grafana for metrics, Uptime Kuma for end‑to‑end availability, Gotify push for paging.</dd>
+            <dt>Access</dt><dd>Zero direct port exposure: everything reaches the public via Cloudflare Tunnel, gated by Traefik + Authelia + CrowdSec.</dd>
+            <dt>Orchestration</dt><dd>K3s for service workloads, plain Docker for ancillary tools, Portainer for visual inspection.</dd>
+            <dt>Hardware</dt><dd>Self‑built workstation running Unraid with 52&nbsp;TB of parity‑protected storage. Hosts the container workloads alongside a Home Assistant VM and a general‑purpose Linux VM.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <h2 id="edu-title" class="section-title"><span>Edu</span>cation</h2>
+        <div class="edu">
+          <div class="edu__item">
+            <h4>Master of Mathematics, Applied Mathematics — University of Waterloo</h4>
+            <ul>
+              <li>Research: Computational Fluid Dynamics, Scientific Computing, Numerical Analysis</li>
+              <li>Courses: Fluid Mechanics; Numerical PDEs; Transport Phenomena & Multiphase Flow; Applied Functional Analysis</li>
+              <li>Thesis: <em>H(div)-conforming Discontinuous Galerkin Methods for Multiphase Flow</em></li>
+            </ul>
+          </div>
+          <div class="edu__item">
+            <h4>B.Sc., Computer Science &amp; Mathematics — Thompson Rivers University</h4>
+            <ul>
+              <li>GPA: 4.21 / 4.33 · Dean's Honour Roll (2016, 2017, 2018)</li>
+              <li>CS: Advanced Web Design &amp; Programming; Networks; Data Structures; DB Systems; Operating Systems</li>
+              <li>Math: Graph Theory; Probability; Statistics; Differential Equations; Topology; Linear Programming; Linear Algebra; Discrete Math</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publication" aria-labelledby="pubs-title">
+      <div class="container pubs">
+        <h2 id="pubs-title" class="section-title"><span>Pub</span>lications</h2>
+        <ol>
+          <li>
+            <a href="https://uwspace.uwaterloo.ca/bitstream/handle/10012/16952/Booker_Kyle.pdf?sequence=3&isAllowed=y" target="_blank" rel="noreferrer">
+              <strong>Booker, K.</strong> 2021. “H(div)-conforming Discontinuous Galerkin Methods for Multiphase Flow.” University of Waterloo, Masters thesis.
+            </a>
+          </li>
+          <li>
+            <strong>Booker, K.</strong>, et al. “Edge‑coloured graph homomorphisms, alternating paths and duality.” <em>Journal of Combinatorial Mathematics and Combinatorial Computing (JCMCC)</em>, August 2022.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1051/mmnp/2019008" target="_blank" rel="noreferrer">
+              <strong>Booker, K.</strong>, Nec, Y. “On Accuracy of Numerical Solution to Boundary Value Problems on Infinite Domains with Slow Decay.” <em>Math. Model. Nat. Phenom.</em>, 14‑5 April 2019.
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Contact <span>info</span></h2>
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:bookerkyle@gmail.com">
+            <div>
+              <strong>Email</strong>
+              <small>bookerkyle@gmail.com</small>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div>
+              <strong>Address</strong>
+              <small>Vancouver, BC</small>
+            </div>
+          </div>
+          <a class="contact-item" href="https://www.linkedin.com/in/kylebooker/" target="_blank" rel="noreferrer">
+            <div>
+              <strong>LinkedIn</strong>
+              <small>/in/kylebooker</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer__row">
+      <div class="footer__brand">
+        <div class="brand__logo" aria-hidden="true">KB</div>
+        <small>© <span id="y"></span> Kyle. All rights reserved.</small>
+      </div>
+      <div class="footer__links">
+        <a class="btn" href="https://github.com/KyleBooker" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="https://scholar.google.ca/citations?hl=en&user=wfI17DQAAAAJ&view_op=list_works" target="_blank" rel="noreferrer">Google Scholar</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
 </html>
