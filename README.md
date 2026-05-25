@@ -6,6 +6,10 @@ Personal portfolio site for myself.
 
 The site is a single static page covering experience, skills, a home-lab tour with a live Grafana embed, education, and publications.
 
+![Hero — vortex shedding video with intro](docs/hero.png)
+
+![Home lab — live Grafana metrics embedded in the page](docs/homelab.png)
+
 ## Project structure
 
 ```
@@ -14,6 +18,7 @@ The site is a single static page covering experience, skills, a home-lab tour wi
 ├── css/styles.css          # All styles
 ├── js/main.js              # Theme toggle, mobile menu, hero video
 ├── img/                    # Photos, project illustrations (SVG), hero video
+├── docs/                   # README screenshots (not served by the site)
 ├── Kyle_Booker_Resume.pdf  # Linked from the page (stable URL)
 ├── robots.txt
 ├── sitemap.xml
