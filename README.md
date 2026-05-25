@@ -34,7 +34,6 @@ The site is a single static page covering experience, skills, a home-lab tour wi
 ├── Kyle_Booker_Resume.pdf  # Linked from the page (stable URL)
 ├── robots.txt
 ├── sitemap.xml
-├── LICENSE                 # MIT
 └── README.md
 ```
 
@@ -63,6 +62,6 @@ Self-hosted from my home lab:
 
 The site is part of the home-lab tour described on the page itself.
 
-## License
+## Copyright
 
-[MIT](./LICENSE) — feel free to use the layout or styles as a starting point for your own portfolio.
+© Kyle Booker. All rights reserved. This repository is public for transparency; the code and content are not licensed for reuse. If you'd like to use anything here as a reference, please get in touch.
