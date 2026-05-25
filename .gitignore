@@ -1,0 +1,19 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE / agent metadata
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Personal documents — keep out of public history
+*Cover_Letter*.pdf
+*cover_letter*.pdf
