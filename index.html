@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kyle Booker — Software Engineer</title>
-  <meta name="description" content="Software developer with an applied math background. I build reliable systems — from numerical solvers to self-hosted infrastructure — and care about the operational side: monitoring, automation, and code that runs unattended." />
+  <title>Kyle Booker — Data Engineer</title>
+  <meta name="description" content="Data engineer in Vancouver, BC with an applied math background. I build reliable data pipelines — Airflow-orchestrated ETL, dbt models, and AWS Textract ingestion — and operate a self-hosted K3s platform serving 50+ users." />
   <meta name="author" content="Kyle Booker" />
 
   <!-- Open Graph / Twitter (nice link previews) -->
-  <meta property="og:title" content="Kyle Booker — Software Engineer" />
-  <meta property="og:description" content="Software engineer focused on reliable systems, self-hosted infrastructure, and scientific computing." />
+  <meta property="og:title" content="Kyle Booker — Data Engineer" />
+  <meta property="og:description" content="Data engineer focused on reliable pipelines, cloud data platforms, and self-hosted infrastructure." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kyle-booker.com" />
   <meta property="og:image" content="https://kyle-booker.com/img/preview.jpg" />
@@ -25,6 +25,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured data: tells search engines who this page is about -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kyle Booker",
+    "jobTitle": "Data Engineer",
+    "url": "https://kyle-booker.com",
+    "email": "mailto:bookerkyle@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "addressCountry": "CA"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Waterloo" },
+      { "@type": "CollegeOrUniversity", "name": "Thompson Rivers University" }
+    ],
+    "knowsAbout": ["Data Engineering", "ETL Pipelines", "Apache Airflow", "dbt", "Python", "SQL", "PostgreSQL", "AWS", "Kubernetes", "Applied Mathematics"],
+    "sameAs": [
+      "https://github.com/KyleBooker",
+      "https://www.linkedin.com/in/kylebooker/",
+      "https://scholar.google.ca/citations?hl=en&user=wfI17DQAAAAJ"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,6 +71,7 @@
           <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
           <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
           <li role="none"><a role="menuitem" href="#homelab">Homelab</a></li>
+          <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
           <li role="none"><a role="menuitem" href="#education">Education</a></li>
           <li role="none"><a role="menuitem" href="#publication">Publications</a></li>
           <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
@@ -67,7 +96,7 @@
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container">
         <h1>Hi, I'm <span class="accent">Kyle</span></h1>
-        <p>Software developer with an applied math background. I work across data engineering, machine learning, and infrastructure — from production ETL pipelines and Azure ML services to a self‑hosted K3s home lab I operate for 50+ users at 99% uptime.</p>
+        <p>Data engineer with an applied math background. I build pipelines that move data reliably — Airflow‑orchestrated ETL at 1&nbsp;GB/hour, AWS Textract ingestion, dbt‑modeled analytics — and operate a self‑hosted K3s platform for 50+ users at 99% uptime.</p>
         <div class="actions">
           <a class="btn btn--primary" href="#experience">See my work</a>
           <a class="btn" href="#homelab">Tour the home lab</a>
@@ -84,8 +113,8 @@
         <div class="about__text">
           <h2 id="about-title" class="section-title">About <span>me</span></h2>
           <p>I'm a Vancouver‑based engineer with a background in applied mathematics (M.Math, University of Waterloo). My career has lived at the intersection of data engineering, analytics, software development, and cloud systems — building reliable tools that turn complex data into useful decisions.</p>
-          <p>In industry I've shipped production ETL pipelines moving 1 GB/hour, Azure OCR services replacing manual data entry for 70% of an analyst team's workload, supervised forecasting models with REST inference endpoints, and a churn‑prediction service that drove a 15% lift in retention. I'm currently reviewing and debugging contributor‑submitted code (Python, C, C++, JS) at Outlier AI to improve LLM training data.</p>
-          <p>Outside of work I operate a Linux home lab running 100+ Docker containers on K3s, with production‑style ingress (Traefik, Cloudflare Tunnels, Authelia SSO, WireGuard) serving 20+ active users at 99% uptime. It's where I sharpen the operational side: deployments, monitoring, backups, and incident recovery.</p>
+          <p>In industry I've shipped Airflow‑orchestrated ETL pipelines moving 1 GB/hour with dbt models powering stakeholder reporting, AWS Textract OCR services replacing manual data entry for 70% of an analyst team's workload, supervised forecasting models with REST inference endpoints, and a churn‑prediction service that drove a 15% lift in retention. I'm currently reviewing and debugging contributor‑submitted code (Python, C, C++, JS) at Outlier AI to improve LLM training data.</p>
+          <p>Outside of work I operate a Linux home lab running 100+ Docker containers on K3s, with production‑style ingress (Traefik, Cloudflare Tunnels, Authelia SSO, WireGuard) serving 50+ active users at 99% uptime. It's where I sharpen the operational side: deployments, monitoring, backups, and incident recovery.</p>
           <div class="actions">
             <a class="btn btn--primary" href="./Kyle_Booker_Resume.pdf" download>Download Résumé</a>
             <a class="btn" href="https://github.com/KyleBooker" target="_blank" rel="noreferrer">GitHub</a>
@@ -128,15 +157,15 @@
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Data &amp; cloud</h3>
+            <h3>Data engineering</h3>
             <ul>
+              <li class="primary">Airflow</li>
+              <li class="primary">dbt</li>
               <li class="primary">PostgreSQL</li>
-              <li class="primary">pandas</li>
-              <li class="primary">Azure</li>
+              <li class="primary">AWS</li>
+              <li>pandas</li>
               <li>MongoDB</li>
               <li>Redis</li>
-              <li>Apache Spark</li>
-              <li>AWS</li>
               <li>Power BI</li>
             </ul>
           </div>
@@ -163,7 +192,7 @@
             <div class="card__media"><img src="./img/outlier-code.svg" alt="Stylized code editor showing reviewed lines with green checkmarks" loading="lazy" /></div>
             <div class="card__body">
               <h3>Reviewer, AI Training (Programming &amp; Mathematics)</h3>
-              <div class="meta">Outlier AI • Jan 2024 – Present • Vancouver, BC</div>
+              <div class="meta">Outlier AI • May 2024 – Present • Vancouver, BC</div>
               <p>Run, debug, and fix contributor‑submitted Python, C, C++, and JavaScript code across math, programming, and physics tasks; verify correctness, edge‑case handling, and runtime behaviour before submissions enter the training pipeline. Audited 5,000+ submissions and authored structured feedback that improved contributor consistency and downstream model accuracy.</p>
               <div class="tag-row">
                 <span>Python</span>
@@ -180,11 +209,12 @@
             <div class="card__body">
               <h3>Data Scientist</h3>
               <div class="meta">Intellifi (Residential Technology) • Jun 2022 – Mar 2023 • Vancouver, BC</div>
-              <p>Shipped an Azure Computer Vision OCR ingestion service in Python processing 1,000+ monthly PDFs end‑to‑end, replacing manual data entry and cutting analyst workload by 70%. Built and deployed supervised forecasting models to Azure with REST inference endpoints integrated into production systems. Owned the reporting layer over the data pipeline, exposing KPIs to product, sales, and executive stakeholders via Power BI.</p>
+              <p>Delivered a rent‑roll OCR ingestion pipeline on AWS (S3, Lambda, Textract, EC2) processing 1,000+ monthly PDFs end‑to‑end, replacing manual data entry and cutting analyst workload by 70%. Built and deployed supervised models on AWS forecasting probability of delinquency for residential loans, with REST inference endpoints integrated into production systems. Owned the reporting layer over the data pipeline, exposing KPIs to product, sales, and executive stakeholders via Power BI.</p>
               <div class="tag-row">
                 <span>Python</span>
-                <span>Azure</span>
-                <span>OCR</span>
+                <span>AWS</span>
+                <span>Textract</span>
+                <span>Lambda</span>
                 <span>REST APIs</span>
                 <span>Power BI</span>
                 <span>Forecasting</span>
@@ -197,10 +227,12 @@
             <div class="card__body">
               <h3>Data Analyst</h3>
               <div class="meta">CMLS Financial (Residential Capital Markets) • Jun 2021 – Jun 2022 • Vancouver, BC</div>
-              <p>Built and operated an automated Python/SQL ETL pipeline processing 1 GB of customer data per hour, replacing manual workflows. Engineered a Selenium ingestion service scraping 30,000 real‑estate listings per week into a PostgreSQL store for analytics. Delivered a production churn‑prediction service (Python, pandas) at 80% recall, driving a 15% lift in retention via targeted campaigns.</p>
+              <p>Built and operated an Airflow‑orchestrated Python/SQL ETL pipeline processing 1 GB of customer data per hour into PostgreSQL, replacing manual workflows with scheduled, monitored DAGs. Developed dbt models transforming raw data into analytics‑ready tables powering Power BI reporting. Engineered a Selenium ingestion service scraping 30,000 real‑estate listings per week into a PostgreSQL store for analytics. Delivered a production churn‑prediction service (Python, pandas) at 80% recall, driving a 15% lift in retention via targeted campaigns.</p>
               <div class="tag-row">
                 <span>Python</span>
                 <span>SQL</span>
+                <span>Airflow</span>
+                <span>dbt</span>
                 <span>PostgreSQL</span>
                 <span>ETL</span>
                 <span>Selenium</span>
@@ -252,7 +284,7 @@
           <p>I operate a production‑style self‑hosted infrastructure that runs my personal services and supports family and friends. It's the place I sharpen the operational craft — deployments, ingress, identity, monitoring, backups, and incident recovery — at small but real scale.</p>
           <div class="lab-stats">
             <div class="lab-stat"><div class="lab-stat__num">100+</div><div class="lab-stat__label">Docker containers</div></div>
-            <div class="lab-stat"><div class="lab-stat__num">20+</div><div class="lab-stat__label">Active users</div></div>
+            <div class="lab-stat"><div class="lab-stat__num">50+</div><div class="lab-stat__label">Active users</div></div>
             <div class="lab-stat"><div class="lab-stat__num">99%</div><div class="lab-stat__label">Uptime</div></div>
             <div class="lab-stat"><div class="lab-stat__num">K3s</div><div class="lab-stat__label">Orchestration</div></div>
           </div>
@@ -361,6 +393,32 @@
             <dt>Orchestration</dt><dd>K3s for service workloads, plain Docker for ancillary tools, Portainer for visual inspection.</dd>
             <dt>Hardware</dt><dd>Self‑built workstation running Unraid with 52&nbsp;TB of parity‑protected storage. Hosts the container workloads alongside a Home Assistant VM and a general‑purpose Linux VM.</dd>
           </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title"><span>Pro</span>jects</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card__media card__media--gradient" data-label="Serverless AI on AWS" aria-hidden="true"></div>
+            <div class="card__body">
+              <h3>AI Movie Recommender</h3>
+              <div class="meta">Personal project • May 2026 • Serverless on AWS</div>
+              <p>Serverless AI movie recommender on AWS: watch history is ingested into DynamoDB, and personalized recommendations are generated with Amazon Bedrock (Nova Micro) behind Cognito‑authenticated API Gateway and Lambda endpoints.</p>
+              <div class="tag-row">
+                <span>AWS Lambda</span>
+                <span>DynamoDB</span>
+                <span>Amazon Bedrock</span>
+                <span>API Gateway</span>
+                <span>Cognito</span>
+              </div>
+              <div class="actions">
+                <a class="btn" href="https://github.com/KyleBooker/ai-movie-recommender" target="_blank" rel="noreferrer">View code on GitHub</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
