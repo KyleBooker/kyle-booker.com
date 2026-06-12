@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kyle Booker — Software Engineer</title>
-  <meta name="description" content="Software developer with an applied math background. I build reliable systems — from numerical solvers to self-hosted infrastructure — and care about the operational side: monitoring, automation, and code that runs unattended." />
+  <title>Kyle Booker — Data Engineer</title>
+  <meta name="description" content="Data engineer in Vancouver, BC with an applied math background. I build reliable data pipelines — production ETL, OCR ingestion services, and cloud ML endpoints — and operate a self-hosted K3s platform serving 50+ users." />
   <meta name="author" content="Kyle Booker" />
 
   <!-- Open Graph / Twitter (nice link previews) -->
-  <meta property="og:title" content="Kyle Booker — Software Engineer" />
-  <meta property="og:description" content="Software engineer focused on reliable systems, self-hosted infrastructure, and scientific computing." />
+  <meta property="og:title" content="Kyle Booker — Data Engineer" />
+  <meta property="og:description" content="Data engineer focused on reliable pipelines, cloud data platforms, and self-hosted infrastructure." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kyle-booker.com" />
   <meta property="og:image" content="https://kyle-booker.com/img/preview.jpg" />
@@ -25,6 +25,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured data: tells search engines who this page is about -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kyle Booker",
+    "jobTitle": "Data Engineer",
+    "url": "https://kyle-booker.com",
+    "email": "mailto:bookerkyle@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "addressCountry": "CA"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Waterloo" },
+      { "@type": "CollegeOrUniversity", "name": "Thompson Rivers University" }
+    ],
+    "knowsAbout": ["Data Engineering", "ETL Pipelines", "Python", "SQL", "PostgreSQL", "Apache Spark", "Azure", "Kubernetes", "Applied Mathematics"],
+    "sameAs": [
+      "https://github.com/KyleBooker",
+      "https://www.linkedin.com/in/kylebooker/",
+      "https://scholar.google.ca/citations?hl=en&user=wfI17DQAAAAJ"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -67,7 +95,7 @@
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container">
         <h1>Hi, I'm <span class="accent">Kyle</span></h1>
-        <p>Software developer with an applied math background. I work across data engineering, machine learning, and infrastructure — from production ETL pipelines and Azure ML services to a self‑hosted K3s home lab I operate for 50+ users at 99% uptime.</p>
+        <p>Data engineer with an applied math background. I build pipelines that move data reliably — production ETL at 1&nbsp;GB/hour, Azure OCR ingestion, ML inference endpoints — and operate a self‑hosted K3s platform for 50+ users at 99% uptime.</p>
         <div class="actions">
           <a class="btn btn--primary" href="#experience">See my work</a>
           <a class="btn" href="#homelab">Tour the home lab</a>
